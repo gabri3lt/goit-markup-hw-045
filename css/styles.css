@@ -8,6 +8,8 @@
   --color7: #afb1b8;
   --color8: #f5f4fa;
   --color9: rgba(255, 255, 255, 0.1);
+  --color10: #eeeeee;
+  --color11: #f5f4fa;
   --shadow1: rgba(0, 0, 0, 0.1);
   --shadow2: rgba(0, 0, 0, 0.08);
   --shadow3: rgba(0, 0, 0, 0.12);
@@ -49,7 +51,7 @@ nav {
   background-image: linear-gradient(#2f303a66, #2f303a66),
     url("https://gabri3lt.github.io/goit-markup-hw-04/images/banner.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -185,7 +187,7 @@ h1 {
   background: var(--color3);
   /* shadow-middle */
 
-  box-shadow: 0px 4px 4px var(--color2var(--color2));
+  box-shadow: 0px 4px 4px var(--color2);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -398,7 +400,7 @@ h1 {
 .team {
   display: flex;
   flex-direction: column;
-  background: var(--color3);
+  background: var(--color11);
 }
 
 .team_inner {
@@ -541,6 +543,8 @@ h1 {
 .foot_wrapper {
   display: flex;
   padding-left: 100px;
+  width: 1200px;
+  margin: 0;
 }
 
 .heading_foot {
