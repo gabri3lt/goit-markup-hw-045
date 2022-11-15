@@ -51,7 +51,6 @@ nav {
   background-image: linear-gradient(#2f303a66, #2f303a66),
     url("https://gabri3lt.github.io/goit-markup-hw-04/images/banner.jpg");
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
