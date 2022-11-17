@@ -498,8 +498,7 @@ h1 {
   padding-top: 3.5%;
   padding-left: 3.5%;
   fill: var(--color7);
-  transition: fill 250ms ease, background-color 250ms ease,
-    border-color 250ms ease;
+  transition: fill 250ms ease, background-color 250ms ease, border 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
