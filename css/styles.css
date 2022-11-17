@@ -498,7 +498,8 @@ h1 {
   padding-top: 3.5%;
   padding-left: 3.5%;
   fill: var(--color7);
-  transition: fill 250ms ease, background-color 250ms ease;
+  transition: fill 250ms ease, background-color 250ms ease,
+    border-color 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -567,14 +568,14 @@ h1 {
   padding-top: 6.5%;
   padding-left: 6.5%;
   fill: var(--color3);
+  transition: fill 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot_social_icon:hover,
 .foot_social_icon:focus {
   fill: var(--color3);
   background-color: var(--color4);
-  transition: fill 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .offer_box {
