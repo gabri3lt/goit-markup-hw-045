@@ -2,6 +2,7 @@
   --color1: #212121;
   --color2: #000000;
   --color3: #ffffff;
+  --color3_opacity: #ffffff99;
   --color4: #2196f3;
   --color5: #757575;
   --color6: #2f303a;
@@ -82,11 +83,30 @@ h1 {
   color: var(--color2);
 }
 
+.studio_foot {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 2rem;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  max-width: 200px;
+  margin-right: 33%;
+  color: var(--color3);
+}
+
 .studio:visited,
 .studio:focus,
 .studio:link {
   text-decoration: none;
   color: var(--color2);
+}
+
+.studio_foot:visited,
+.studio_foot:focus,
+.studio_foot:link {
+  text-decoration: none;
+  color: var(--color3);
 }
 
 .logo {
@@ -179,25 +199,23 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--color1);
+  color: var(--color3);
   width: 200px;
   height: 50px;
 
-  background: var(--color3);
+  background: var(--color4);
   /* shadow-middle */
-
-  box-shadow: 0px 4px 4px var(--color2);
   border-radius: 4px;
   cursor: pointer;
-  transition: fill 250ms ease, background-color 250ms ease;
+  transition: box-shadow 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .click_main:hover,
 .click_main:focus {
-  background-color: var(--color4);
-  color: var(--color3);
+  box-shadow: 0px 4px 4px var(--color2);
 }
+
 .click:hover,
 .click:focus {
   background-color: var(--color4);
@@ -234,18 +252,35 @@ h1 {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: 1rem;
+  line-height: 24px;
   cursor: pointer;
   letter-spacing: 0.03em;
+  padding-bottom: 9px;
 
   color: var(--color3);
   position: relative;
+  transition: color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link_contact_foot {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  padding-bottom: 9px;
+
+  color: var(--color3_opacity);
+  position: relative;
+  transition: color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover {
   color: var(--color4);
-  transition: color 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_agencja_active {
@@ -258,12 +293,12 @@ h1 {
   cursor: pointer;
   color: var(--color1);
   text-decoration: none;
+  transition: color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_agencja_active:hover {
   color: var(--color4);
-  transition: color 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_agencja_active::after {
@@ -287,12 +322,12 @@ h1 {
   cursor: pointer;
   color: var(--color1);
   text-decoration: none;
+  transition: color 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_portfolio_active:hover {
   color: var(--color4);
-  transition: color 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_portfolio_active::after {
@@ -314,14 +349,14 @@ h1 {
   line-height: 1rem;
   letter-spacing: 0.02em;
   color: var(--color5);
+  transition: color 250ms ease, fill 250ms ease, stroke 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link_contact:hover {
   color: var(--color4);
   fill: var(--color4);
   stroke: var(--color4);
-  transition: transform 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list_heading {
@@ -497,6 +532,7 @@ h1 {
   border-radius: 50%;
   padding-top: 3.5%;
   padding-left: 3.5%;
+  cursor: pointer;
   fill: var(--color7);
   transition: fill 250ms ease, background-color 250ms ease, border 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -567,7 +603,7 @@ h1 {
   padding-top: 6.5%;
   padding-left: 6.5%;
   fill: var(--color3);
-  transition: fill 250ms ease;
+  transition: fill 250ms ease, background-color 250ms ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
